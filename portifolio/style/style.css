@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+:root{
+    --color-primaria: #545157,#232124, #111011;
+    --color-secundaria: #7c639c;
+    --color-terceira: rgb(222, 221, 235);
+
+    --color-footer: #353236;
+
+    --color-boder-link: #9c84dd;
+    --link-hover: #2e2a30;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: linear-gradient(var(--color-primaria));
+    color: var(--color-terceira);
+    box-sizing: border-box;
+    
+   
+}
+.header{
+    padding: 3% 0% 0% 20%;
+}
+.header_menu{
+    display: flex;
+    gap: 100px;
+    
+    
+}
+.header_menu_link{
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--color-secundaria);
+    text-decoration: none;
+}
+
+
+.titulo{
+    color: var(--color-secundaria);
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+}
+.conteiner{
+    padding: 15% 28%;
+    display: flex;
+    gap: 15%;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+.conteiner_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px 15px;
+}
+.conteiner_titulo{
+    font-size: 3rem;
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 400;
+}
+    
+.conteiner_texto{
+    font-size: 1.6rem;
+    font-family:"Roboto Mono", monospace;
+    font-weight: 100;
+}
+.conteiner_links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: center;
+}
+.conteiner_links_link{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    border:2px solid  var(--color-boder-link);
+    width: 80%;
+    font-size: 1.6rem;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px 0;
+    text-decoration: none;
+    color: var(--color-terceira);
+    font-family:"Roboto Mono", monospace;
+    font-weight: 500;
+    
+    
+}
+.titulo_links{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-weight: 500;
+    width: 50%;
+}
+.conteiner_links_link:hover{
+    background-color: var(--link-hover);
+}
+.imagem{
+    width: 50%;
+}
+.footer{
+    padding: 24px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family:"Roboto Mono", monospace;
+    font-weight: 300;
+    color: var(--color-terceira);
+    background-color: var(--color-footer);
+}
+@media (max-width: 905px){
+    .header{
+        padding: 10%;
+        justify-content: center;
+    }
+    .conteiner{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteiner_conteudo{
+        width: auto;
+        
+    }
+
+}
+
+
+
+
