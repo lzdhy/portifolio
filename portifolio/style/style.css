@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Prata&display=swap');
+
+:root{
+    --color: #f3f8f4;
+    --cor-um: #070808;
+    --cor-dois:  #08546c;
+
+    --footer-cor: #022534;
+    --hover-cor: #a0bacc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--color);
+    box-sizing: border-box;
+    
+   
+}
+ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    gap: 1rem; 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: var(--color);
+
+    li {
+        padding: 2% 5%;
+        float: right;
+
+        a {
+            position: absolute;
+            font-family: "Josefin Sans", sans-serif;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--cor-um);
+            text-decoration: none;
+            text-transform: uppercase;
+            transition: 0.5s;
+
+            &::after {
+                position: absolute;
+                content: "";
+                top: 100%;
+                right: 0;
+                width: 100%;
+                height: 3%;
+                background: var(--cor-dois);
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 0.5s;
+            }
+              
+            &:hover {
+                color: var(--hover-cor);
+            }
+              
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+        }
+  }
+}
+
+  
+
+      
+
+      
+ 
+  
+  
+.titulo{
+    color: var(--cor-dois);
+    font-family: "Prata", serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.conteiner{
+    padding: 20% 10%;
+    display: flex;
+    gap: 20%;
+    align-items: center;
+       
+}
+.img{
+    width: 50%;
+    height: 50%;
+    border: 2px solid ;
+    border-radius: 2%;
+    padding: 0.5%;
+}
+.conteiner_conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px, 10px;
+}
+.conteiner_conteudo_two{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px, 10px;
+    padding: 10%;
+
+    
+}
+.conteiner_titulo{
+    font-size: 3.7rem;
+    font-family: "Prata", serif;
+    color: var(--cor-um);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+    
+.conteiner_texto{
+    font-size: 2.5rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    color: var(--cor-um);
+}
+.conecte{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border:2px solid  var(--cor-dois);
+    width: 25%;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 100px;
+    padding: 15px 0;
+    text-decoration: none;
+    color: var(--cor-um);
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+.conecte:hover{
+    background-color: var(--hover-cor);
+}
+
+.footer{
+    padding: 2%;
+    text-align: start;
+    font-size: 1.5rem;
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: 200;
+    color: var(--cor-um);
+    background-color: var(--footer-cor);
+    
+}
+.conteiner_links{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 10px;
+    padding: 2%;
+    
+}
+.conteiner_links_link{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border:2px solid  var(--hover-cor);
+    width: 2%;
+    font-size: 1.8rem;
+    text-align: center;
+    border-radius: 100px;
+    padding: 5px 0;
+    text-decoration: none;
+    color: var(--cor-um);
+    font-family:"Josefin Sans", sans-serif;
+    font-weight: 300;
+    
+    
+}
+
+.conteiner_links_link:hover{
+    background-color: var(--hover-cor);
+}
+.segunda_pagina{
+    background-image: url("/assets/cap.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+@media (max-width: 773px){
+    .header{
+        padding: 10%;
+        justify-content: center;
+    }
+    .conteiner{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .conteiner_conteudo{
+        width: auto;
+        
+    }
+
+}
